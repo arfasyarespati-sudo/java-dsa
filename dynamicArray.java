@@ -46,7 +46,7 @@ public class dynamicArray {
         MyArrayList list = new MyArrayList();
         list.add(10);
         list.add(20);
-        list.add(30); // Saat menambah data ke-3, fungsi resize() akan otomatis berjalan
+        list.add(30);
 
         System.out.println("Data on index-2: " + list.get(2));
         System.out.println("Element total: " + list.getSize());
