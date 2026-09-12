@@ -10,3 +10,4 @@ public class Node {
         System.out.println("pointer: " + head.next);
     }
 }
+
