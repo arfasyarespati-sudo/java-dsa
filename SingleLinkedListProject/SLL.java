@@ -11,16 +11,14 @@ class Mahasiswa {
         this.ipk = ipk;
     }
 
-    public double getIpk() {
-        return ipk;
-    }
-
     public String getNim() {
         return nim;
     }
-
     public String getNama() {
         return nama;
+    }
+    public double getIpk() {
+        return ipk;
     }
 
     @Override
