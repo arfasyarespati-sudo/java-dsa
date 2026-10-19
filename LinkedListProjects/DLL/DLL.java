@@ -1,4 +1,4 @@
-package DoubleLinkedListProject;
+package DLL;
 
 public class DLL {
     Node head;
@@ -157,8 +157,9 @@ public class DLL {
             current = current.prev;
         }
     }
+
     public static void main(String[] args) {
-      DLL list = new DLL();
+        DLL list = new DLL();
 
         Node n1 = new Node();
         n1.data = new Mahasiswa("101", "Budi", 3.20);

@@ -1,5 +1,4 @@
-package QueueThings;
-
+package QueueProjects;
 
 public class myQueue {
     Object[] queue;
@@ -13,23 +12,22 @@ public class myQueue {
         rear = -1;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return (item == 0);
     }
 
-    private boolean isFull(){
+    private boolean isFull() {
         return (item == queue.length);
     }
 
-    public void makeEmpty(){
+    public void makeEmpty() {
         queue = new Object[10];
         front = 0;
         rear = -1;
         item = 0;
     }
 
-
     public static void main(String[] args) {
-        
+
     }
 }

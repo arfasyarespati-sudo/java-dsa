@@ -1,4 +1,4 @@
-package DoubleLinkedListProject;
+package DLL;
 
 public class Mahasiswa {
     String nim;

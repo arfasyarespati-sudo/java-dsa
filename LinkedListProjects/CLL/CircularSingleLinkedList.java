@@ -1,4 +1,4 @@
-package CircularLL;
+package CLL;
 
 class NodeCSLL {
     Object data;

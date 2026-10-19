@@ -1,4 +1,4 @@
-package CircularLL;
+package CLL;
 
 class Node {
     Node next;
@@ -17,11 +17,11 @@ public class testof {
     Node tail;
     int size;
 
-    boolean isEmpty(){
+    boolean isEmpty() {
         return head == null;
     }
 
-    void addFirst(Object data){
+    void addFirst(Object data) {
         Node n = new Node(data);
         if (isEmpty()) {
             head = tail = n;
@@ -36,6 +36,7 @@ public class testof {
         }
         size++;
     }
+
     void addLast(Object data) {
         Node n = new Node(data);
         if (isEmpty()) {
@@ -50,11 +51,12 @@ public class testof {
         }
         size++;
     }
+
     void delFirst() {
         if (isEmpty()) {
             System.out.println("Nothin to delete");
             return;
-        } 
+        }
         if (head == tail) {
             head = null;
             tail = null;
@@ -65,11 +67,12 @@ public class testof {
         }
         size--;
     }
-    void delLast(){
+
+    void delLast() {
         if (isEmpty()) {
             System.out.println("nothing to delete");
             return;
-        } 
+        }
         if (head == tail) {
             head = null;
             tail = null;

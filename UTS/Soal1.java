@@ -2,8 +2,11 @@ package UTS;
 
 interface PlaylistADT {
     void tambahLagu(int id, String judul, String penyanyi, int durasi);
+
     void hapusLagu(int id);
+
     void putarSelanjutnya();
+
     void tampilkanPlaylist();
 }
 
