@@ -1,10 +1,10 @@
 package TreeProjects;
 
-public class BinaryTreeArray {
+public class binerify {
 
     private final String[] tree;
 
-    public BinaryTreeArray(String[] tree) {
+    public binerify(String[] tree) {
         this.tree = tree;
     }
 
@@ -15,7 +15,8 @@ public class BinaryTreeArray {
 
     // Preorder: root -> kiri -> kanan
     public void preorder(int i) {
-        if (!isValid(i)) return;
+        if (!isValid(i))
+            return;
         System.out.print(tree[i] + " ");
         preorder(2 * i + 1);
         preorder(2 * i + 2);
@@ -23,7 +24,8 @@ public class BinaryTreeArray {
 
     // Inorder: kiri -> root -> kanan
     public void inorder(int i) {
-        if (!isValid(i)) return;
+        if (!isValid(i))
+            return;
         inorder(2 * i + 1);
         System.out.print(tree[i] + " ");
         inorder(2 * i + 2);
@@ -31,13 +33,15 @@ public class BinaryTreeArray {
 
     // Postorder: kiri -> kanan -> root
     public void postorder(int i) {
-        if (!isValid(i)) return;
+        if (!isValid(i))
+            return;
         postorder(2 * i + 1);
         postorder(2 * i + 2);
         System.out.print(tree[i] + " ");
     }
 
-    // Level-order: karena urutan index sudah per level (atas ke bawah, kiri ke kanan)
+    // Level-order: karena urutan index sudah per level (atas ke bawah, kiri ke
+    // kanan)
     public void levelOrder() {
         for (int i = 0; i < tree.length; i++) {
             if (tree[i] != null) {
@@ -48,15 +52,15 @@ public class BinaryTreeArray {
 
     public static void main(String[] args) {
         // Representasi tree:
-        //         A          index 0
-        //        / \
-        //       B   C        index 1, 2
-        //      / \   \
-        //     D   E   F      index 3, 4, 6
+        // A index 0
+        // / \
+        // B C index 1, 2
+        // / \ \
+        // D E F index 3, 4, 6
         // Index 5 (anak kiri C) kosong, diisi null
-        String[] data = {"A", "B", "C", "D", "E", null, "F"};
+        String[] data = { "A", "B", "C", "D", "E", null, "F" };
 
-        BinaryTreeArray t = new BinaryTreeArray(data);
+        binerify t = new binerify(data);
 
         System.out.print("Preorder   : ");
         t.preorder(0);
