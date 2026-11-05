@@ -1,6 +1,5 @@
 package assignments.other;
 
-import assignments.AVL.Node;
 
 class Node {
     Object data;
